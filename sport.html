@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoạt Động Thể Thao - Trường Học XYZ</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/sports.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="logo">
+            <img src="/hinh5.png" alt="Logo Trường Học" />
+            <div class="school-name">
+              <h1>Trường Học XYZ</h1>
+              <p>Chất lượng - Sáng tạo - Phát triển</p>
+            </div>
+          </div>
+          <div class="header-contact">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <span>Liên hệ</span>
+                <a href="tel:0123456789">0123 456 789</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:info@truonghocxyz.edu.vn"
+                  >info@truonghocxyz.edu.vn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="./main.html">Trang chủ</a></li>
+            <li class="dropdown">
+              <a href="information.html"
+                >Thông tin <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="schedule.html">Thời khóa biểu</a></li>
+                <li><a href="grades.html">Xem điểm</a></li>
+                <li><a href="exam-schedule.html">Lịch thi</a></li>
+                <li><a href="tuition.html">Học phí</a></li>
+                <li><a href="pay-tuition.html">Đóng học phí</a></li>
+              </ul>
+            </li>
+            <li class="active"><a href="sports.html">Hoạt động thể thao</a></li>
+            <li><a href="/thongbao.html">Thông báo</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+      <div class="container">
+        <h1>Hoạt Động Thể Thao</h1>
+        <div class="breadcrumb">
+          <a href="/main.html">Trang chủ</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <span class="current">Hoạt động thể thao</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports Intro -->
+    <section class="sports-intro">
+      <div class="container">
+        <div class="intro-content">
+          <div class="intro-text" data-aos="fade-right">
+            <h2>Phát Triển Toàn Diện</h2>
+            <p>
+              Tại Trường Học XYZ, chúng tôi tin rằng giáo dục thể chất là một
+              phần không thể thiếu trong việc phát triển toàn diện của học sinh.
+              Thông qua các hoạt động thể thao, học sinh không chỉ rèn luyện sức
+              khỏe mà còn học được tinh thần đồng đội, kỷ luật và sự kiên trì.
+            </p>
+            <p>
+              Chúng tôi cung cấp đa dạng các hoạt động thể thao, từ các môn thể
+              thao đồng đội đến các môn thể thao cá nhân, phù hợp với sở thích
+              và năng khiếu của từng học sinh.
+            </p>
+            <a href="#sports-teams" class="btn btn-primary"
+              >Khám phá các đội thể thao</a
+            >
+          </div>
+          <div class="intro-image" data-aos="fade-left">
+            <img src="/hinh8.jpg" alt="Hoạt động thể thao" />
+            <div class="overlay-text">
+              <div class="overlay-content">
+                <h3>"Tinh thần thể thao, Ý chí vươn cao"</h3>
+                <p>
+                  Phát triển thể chất - Rèn luyện ý chí - Xây dựng tính cách
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports Facilities -->
+    <section class="sports-facilities">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Cơ Sở Vật Chất Thể Thao</h2>
+          <p>
+            Trường học được trang bị đầy đủ cơ sở vật chất hiện đại phục vụ cho
+            các hoạt động thể thao
+          </p>
+        </div>
+
+        <div class="facilities-slider">
+          <div class="swiper facilities-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="facility-card">
+                  <div class="facility-image">
+                    <img src="/hinh10.jpg" alt="Sân bóng đá" />
+                  </div>
+                  <div class="facility-content">
+                    <h3>Sân Bóng Đá</h3>
+                    <p>
+                      Sân bóng đá tiêu chuẩn với cỏ nhân tạo thế hệ mới, hệ
+                      thống chiếu sáng và khán đài.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="facility-card">
+                  <div class="facility-image">
+                    <img src="/hinh9.jpg" alt="Sân bóng rổ" />
+                  </div>
+                  <div class="facility-content">
+                    <h3>Sân Bóng Rổ</h3>
+                    <p>
+                      Sân bóng rổ trong nhà với mặt sân tiêu chuẩn, hệ thống
+                      chiếu sáng và khán đài.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="facility-card">
+                  <div class="facility-image">
+                    <img src="/hinh5.jpg" alt="Hồ bơi" />
+                  </div>
+                  <div class="facility-content">
+                    <h3>Hồ Bơi</h3>
+                    <p>
+                      Hồ bơi bán Olympic với hệ thống lọc nước hiện đại và khu
+                      vực phòng thay đồ riêng biệt.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="facility-card">
+                  <div class="facility-image">
+                    <img src="/hinh11.jpg" alt="Phòng tập thể dục" />
+                  </div>
+                  <div class="facility-content">
+                    <h3>Phòng Tập Thể Dục</h3>
+                    <p>
+                      Phòng tập được trang bị các thiết bị tập luyện hiện đại,
+                      phù hợp với lứa tuổi học sinh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sports Teams -->
+    <section id="sports-teams" class="sports-teams">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Các Đội Thể Thao</h2>
+          <p>
+            Trường có nhiều đội thể thao chuyên nghiệp, tham gia các giải đấu
+            cấp thành phố và quốc gia
+          </p>
+        </div>
+
+        <div class="teams-grid">
+          <!-- Đội bóng đá -->
+          <div class="team-card" data-aos="flip-left">
+            <div class="team-image">
+              <img src="/hinh12.jpg" alt="Đội bóng đá" />
+              <div class="team-badge">
+                <i class="fas fa-futbol"></i>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Đội Bóng Đá</h3>
+              <p>
+                Đội bóng đá trường đã giành chiến thắng nhiều giải đấu cấp thành
+                phố và từng vô địch giải học sinh toàn quốc năm 2024.
+              </p>
+              <div class="team-details">
+                <div class="detail">
+                  <i class="fas fa-user-friends"></i>
+                  <span>24 thành viên</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-trophy"></i>
+                  <span>12 giải thưởng</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Tập luyện: Thứ 3, 5, 7</span>
+                </div>
+              </div>
+              <a href="#" class="btn-join">Tham gia đội</a>
+            </div>
+          </div>
+          <div class="team-card" data-aos="flip-left" data-aos-delay="100">
+            <div class="team-image">
+              <img src="/hinh13.jpg" alt="Đội bóng rổ" />
+              <div class="team-badge">
+                <i class="fas fa-basketball-ball"></i>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Đội Bóng Rổ</h3>
+              <p>
+                Đội bóng rổ trường luôn là một trong những đội mạnh nhất khu
+                vực, với nhiều học sinh được tuyển vào đội tuyển thành phố.
+              </p>
+              <div class="team-details">
+                <div class="detail">
+                  <i class="fas fa-user-friends"></i>
+                  <span>18 thành viên</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-trophy"></i>
+                  <span>8 giải thưởng</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Tập luyện: Thứ 2, 4, 6</span>
+                </div>
+              </div>
+              <a href="#" class="btn-join">Tham gia đội</a>
+            </div>
+          </div>
+
+          <!-- Đội bơi lội -->
+          <div class="team-card" data-aos="flip-left" data-aos-delay="200">
+            <div class="team-image">
+              <img src="/hinh14.jpg" alt="Đội bơi lội" />
+              <div class="team-badge">
+                <i class="fas fa-swimming-pool"></i>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Đội Bơi Lội</h3>
+              <p>
+                Đội bơi lội trường có lịch sử thành tích xuất sắc, với nhiều huy
+                chương tại các giải đấu cấp quốc gia và khu vực.
+              </p>
+              <div class="team-details">
+                <div class="detail">
+                  <i class="fas fa-user-friends"></i>
+                  <span>20 thành viên</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-trophy"></i>
+                  <span>15 giải thưởng</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Tập luyện: Hàng ngày</span>
+                </div>
+              </div>
+              <a href="#" class="btn-join">Tham gia đội</a>
+            </div>
+          </div>
+
+          <!-- Đội cầu lông -->
+          <div class="team-card" data-aos="flip-left" data-aos-delay="300">
+            <div class="team-image">
+              <img src="/hinh15.jpg" alt="Đội cầu lông" />
+              <div class="team-badge">
+                <i class="fas fa-table-tennis"></i>
+              </div>
+            </div>
+            <div class="team-content">
+              <h3>Đội Cầu Lông</h3>
+              <p>
+                Đội cầu lông trường là một trong những đội mạnh nhất khu vực,
+                từng đạt nhiều thành tích cao tại các giải học sinh.
+              </p>
+              <div class="team-details">
+                <div class="detail">
+                  <i class="fas fa-user-friends"></i>
+                  <span>16 thành viên</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-trophy"></i>
+                  <span>10 giải thưởng</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>Tập luyện: Thứ 2, 4, 6</span>
+                </div>
+              </div>
+              <a href="#" class="btn-join">Tham gia đội</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events -->
+    <section class="sports-events">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Sự Kiện Sắp Tới</h2>
+          <p>
+            Các sự kiện và giải đấu thể thao được tổ chức trong thời gian tới
+          </p>
+        </div>
+
+        <div class="events-timeline" data-aos="fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span class="day">15</span>
+              <span class="month">Tháng 5</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Giải Bóng Đá Học Sinh Cấp Trường</h3>
+              <p>
+                Giải đấu thường niên giữa các lớp, với nhiều giải thưởng hấp
+                dẫn.
+              </p>
+              <div class="event-details">
+                <div class="detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Sân bóng đá trường</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-clock"></i>
+                  <span>8:00 - 17:00</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline">Chi tiết</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span class="day">22</span>
+              <span class="month">Tháng 5</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Giải Bơi Lội Học Sinh Thành Phố</h3>
+              <p>
+                Đội bơi lội trường sẽ tham gia giải đấu cấp thành phố với đầy đủ
+                các nội dung thi đấu.
+              </p>
+              <div class="event-details">
+                <div class="detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Trung tâm Thể thao thành phố</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-clock"></i>
+                  <span>9:00 - 16:00</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline">Chi tiết</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span class="day">01</span>
+              <span class="month">Tháng 6</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Ngày Hội Thể Thao Trường Học</h3>
+              <p>
+                Sự kiện thể thao lớn của trường với nhiều hoạt động thể thao và
+                trò chơi vận động cho tất cả học sinh.
+              </p>
+              <div class="event-details">
+                <div class="detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Sân trường</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-clock"></i>
+                  <span>7:30 - 17:00</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline">Chi tiết</a>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">
+              <span class="day">15</span>
+              <span class="month">Tháng 6</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Giải Bóng Rổ Học Sinh Toàn Quốc</h3>
+              <p>
+                Đội bóng rổ trường sẽ tham gia giải đấu cấp quốc gia, đại diện
+                cho khu vực.
+              </p>
+              <div class="event-details">
+                <div class="detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Nhà thi đấu Quốc gia</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-clock"></i>
+                  <span>8:00 - 18:00</span>
+                </div>
+              </div>
+              <a href="#" class="btn btn-sm btn-outline">Chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coaches -->
+    <section class="coaches-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Đội Ngũ Huấn Luyện Viên</h2>
+          <p>
+            Các huấn luyện viên giàu kinh nghiệm, tận tâm đồng hành cùng học
+            sinh
+          </p>
+        </div>
+
+        <div class="coaches-grid">
+          <div class="coach-card" data-aos="fade-up">
+            <div class="coach-image">
+              <img src="/hinh17.jpg" alt="Huấn luyện viên bóng đá" />
+              <div class="coach-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="coach-info">
+              <h3>realreal</h3>
+              <span class="coach-title">HLV Bóng Đá</span>
+              <p>
+                Cựu cầu thủ chuyên nghiệp với 15 năm kinh nghiệm huấn luyện đội
+                tuyển trẻ các cấp.
+              </p>
+            </div>
+          </div>
+
+          <div class="coach-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="coach-image">
+              <img src="/hinh16.jpg" alt="Huấn luyện viên bóng rổ" />
+              <div class="coach-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="coach-info">
+              <h3>Man city</h3>
+              <span class="coach-title">HLV Bóng Rổ</span>
+              <p>
+                Cựu vận động viên đội tuyển quốc gia, từng đạt huy chương vàng
+                SEA Games.
+              </p>
+            </div>
+          </div>
+
+          <div class="coach-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="coach-image">
+              <img src="/hinh18.jpg" alt="Huấn luyện viên bơi lội" />
+              <div class="coach-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="coach-info">
+              <h3>Lê Văn C</h3>
+              <span class="coach-title">HLV Bơi Lội</span>
+              <p>
+                Cựu vận động viên Olympic với chứng chỉ huấn luyện viên quốc tế,
+                10 năm kinh nghiệm.
+              </p>
+            </div>
+          </div>
+
+          <div class="coach-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="coach-image">
+              <img src="/hinh19.jpg" alt="Huấn luyện viên cầu lông" />
+              <div class="coach-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="coach-info">
+              <h3>Phạm Thị D</h3>
+              <span class="coach-title">HLV Cầu Lông</span>
+              <p>
+                Vận động viên đạt thành tích cao tại các giải quốc gia, có chứng
+                chỉ HLV cấp cao.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Sports Team CTA -->
+    <section class="join-team-cta">
+      <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+          <h2>Tham Gia Các Đội Thể Thao</h2>
+          <p>
+            Hãy tham gia vào các đội thể thao của trường để phát triển kỹ năng,
+            rèn luyện sức khỏe và kết bạn mới.
+          </p>
+          <a href="#" class="btn btn-light">Đăng Ký Ngay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <div class="footer-logo">
+                <img src="/hinh5.png" alt="Logo Trường Học" />
+                <h3>Trường Học XYZ</h3>
+              </div>
+              <p>
+                Nơi ươm mầm tài năng, phát triển toàn diện giá trị con người.
+                Chúng tôi cam kết cung cấp môi trường học tập hiện đại, sáng tạo
+                và thân thiện.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Liên kết nhanh</h4>
+              <ul>
+                <li><a href="/main.html">Trang chủ</a></li>
+                <li><a href="/main.html">Thông tin</a></li>
+                <li><a href="/sport.html">Hoạt động thể thao</a></li>
+                <li><a href="/thongbao.html">Thông báo</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Thông tin học sinh</h4>
+              <ul>
+                <li><a href="/tkb.html">Thời khóa biểu</a></li>
+                <li><a href="/xemdien.html">Xem điểm</a></li>
+                <li><a href="/lichthi.html">Lịch thi</a></li>
+                <li><a href="/hocphi.html">Học phí</a></li>
+                <li><a href="pay-tuition.html">Đóng học phí</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Thông tin liên hệ</h4>
+              <div class="contact-info">
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                  Thành phố HCM
+                </p>
+                <p><i class="fas fa-phone"></i> 0123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@truonghocxyz.edu.vn</p>
+                <p>
+                  <i class="fas fa-clock"></i> Thứ Hai - Thứ Sáu: 7:00 - 17:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 Trường Học XYZ. Tất cả quyền được bảo lưu.</p>
+          <div class="footer-links">
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="/main.html" class="author-link">Giới thiệu</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="/js/sports.js"></script>
+  </body>
+</html>

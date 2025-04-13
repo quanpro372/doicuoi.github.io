@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đóng Học Phí - Trường Học XYZ</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/hocphi.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="logo">
+            <img src="./images/school-logo.svg" alt="Logo Trường Học" />
+            <div class="school-name">
+              <h1>Trường Học XYZ</h1>
+              <p>Chất lượng - Sáng tạo - Phát triển</p>
+            </div>
+          </div>
+          <div class="header-contact">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <span>Liên hệ</span>
+                <a href="tel:0123456789">0123 456 789</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:info@truonghocxyz.edu.vn"
+                  >info@truonghocxyz.edu.vn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="./main.html">Trang chủ</a></li>
+            <li class="dropdown">
+              <a href="information.html"
+                >Thông tin <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="schedule.html">Thời khóa biểu</a>
+                </li>
+                <li><a href="xemdien.html">Xem điểm</a></li>
+                <li><a href="exam-schedule.html">Lịch thi</a></li>
+                <li><a href="tuition.html">Học phí</a></li>
+                <li class="active">
+                  <a href="pay-tuition.html">Đóng học phí</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="sports.html">Hoạt động thể thao</a></li>
+            <li><a href="announcements.html">Thông báo</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="page-title">
+      <div class="container">
+        <h1>Đóng Học Phí</h1>
+        <div class="breadcrumb">
+          <a href="index.html">Trang chủ</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <a href="information.html">Thông tin</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <span class="current">Đóng học phí</span>
+        </div>
+      </div>
+    </section>
+    <section class="tuition-intro">
+      <div class="container">
+        <div class="intro-content">
+          <div class="intro-text" data-aos="fade-right">
+            <h2>Thanh Toán Học Phí Trực Tuyến</h2>
+            <p>
+              Chúng tôi cung cấp hệ thống thanh toán học phí trực tuyến an toàn
+              và tiện lợi, giúp phụ huynh và học sinh tiết kiệm thời gian và dễ
+              dàng quản lý các khoản đóng góp.
+            </p>
+            <p>
+              Bạn có thể lựa chọn các môn học cần đóng phí, xem tổng học phí và
+              thanh toán nhanh chóng thông qua nhiều phương thức thanh toán khác
+              nhau.
+            </p>
+            <div class="payment-methods">
+              <span
+                ><i class="fas fa-credit-card"></i> Thẻ tín dụng/ghi nợ</span
+              >
+              <span><i class="fas fa-money-bill-wave"></i> Chuyển khoản</span>
+              <span><i class="fas fa-wallet"></i> Ví điện tử</span>
+            </div>
+          </div>
+          <div class="intro-image" data-aos="fade-left">
+            <img src="./images/payment-intro.svg" alt="Thanh toán học phí" />
+            <div class="overlay-text">
+              <div class="overlay-content">
+                <h3>"Thanh toán dễ dàng - Học tập không ngừng"</h3>
+                <p>Đảm bảo tương lai học vấn của con em bạn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="payment-steps">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Quy Trình Thanh Toán</h2>
+          <p>Thực hiện theo các bước đơn giản để hoàn tất việc đóng học phí</p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step" data-aos="fade-up" data-aos-delay="100">
+            <div class="step-icon">
+              <i class="fas fa-list-ul"></i>
+            </div>
+            <div class="step-content">
+              <h3>Bước 1: Chọn Lớp & Môn Học</h3>
+              <p>Lựa chọn lớp và các môn học cần đóng phí từ danh sách</p>
+            </div>
+          </div>
+
+          <div class="step" data-aos="fade-up" data-aos-delay="200">
+            <div class="step-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <div class="step-content">
+              <h3>Bước 2: Xác Nhận Thông Tin</h3>
+              <p>Kiểm tra tổng học phí và các môn học đã chọn</p>
+            </div>
+          </div>
+
+          <div class="step" data-aos="fade-up" data-aos-delay="300">
+            <div class="step-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <div class="step-content">
+              <h3>Bước 3: Nhập Thông Tin Thanh Toán</h3>
+              <p>Điền thông tin thẻ hoặc phương thức thanh toán</p>
+            </div>
+          </div>
+
+          <div class="step" data-aos="fade-up" data-aos-delay="400">
+            <div class="step-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="step-content">
+              <h3>Bước 4: Hoàn Tất Giao Dịch</h3>
+              <p>Nhận biên lai điện tử và xác nhận thanh toán</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="course-payment" id="payment-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Chọn Môn Học & Thanh Toán</h2>
+          <p>Lựa chọn các môn học và thực hiện thanh toán học phí</p>
+        </div>
+
+        <div class="payment-container">
+          <div class="payment-tabs">
+            <div class="tab active" data-tab="select-courses">
+              1. Chọn môn học
+            </div>
+            <div class="tab" data-tab="payment-info">
+              2. Thông tin thanh toán
+            </div>
+            <div class="tab" data-tab="confirmation">3. Xác nhận</div>
+          </div>
+
+          <div class="payment-content">
+            <div class="payment-step active" id="select-courses">
+              <div class="filter-container" data-aos="fade-up">
+                <div class="filter-group">
+                  <label for="student-id">Mã học sinh:</label>
+                  <input
+                    type="text"
+                    id="student-id"
+                    class="form-input"
+                    value="123456"
+                    placeholder="Nhập mã học sinh"
+                  />
+                </div>
+                <div class="filter-group">
+                  <label for="class-select">Lớp:</label>
+                  <select id="class-select" class="form-select">
+                    <option value="26TH01">26TH01</option>
+                    <option value="26TH02">26TH02</option>
+                    <option value="26TH03">26TH03</option>
+                    <option value="26TH04">26TH04</option>
+                  </select>
+                </div>
+                <div class="filter-group">
+                  <label for="semester-select">Học kỳ:</label>
+                  <select id="semester-select" class="form-select">
+                    <option value="1">Học kỳ I (2023-2024)</option>
+                    <option value="2">Học kỳ II (2023-2024)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="courses-container" data-aos="fade-up">
+                <div class="course-list">
+                  <table class="courses-table">
+                    <thead>
+                      <tr>
+                        <th class="checkbox-col">
+                          <input type="checkbox" id="select-all" />
+                        </th>
+                        <th>Môn học</th>
+                        <th>Mã môn</th>
+                        <th>Giáo viên</th>
+                        <th>Học phí (VNĐ)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="courses-tbody">
+                      <tr>
+                        <td class="checkbox-col">
+                          <input
+                            type="checkbox"
+                            class="course-checkbox"
+                            data-id="PHY101"
+                            data-fee="1200000"
+                            checked
+                          />
+                        </td>
+                        <td>
+                          <div class="course-name">
+                            <i class="fas fa-atom"></i>
+                            Quốc Phòng
+                          </div>
+                        </td>
+                        <td>PHY101</td>
+                        <td>Đức Thanh</td>
+                        <td>1,200,000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="checkbox-col">
+                          <input
+                            type="checkbox"
+                            class="course-checkbox"
+                            data-id="CHM101"
+                            data-fee="1500000"
+                            checked
+                          />
+                        </td>
+                        <td>
+                          <div class="course-name">
+                            <i class="fas fa-flask"></i>
+                            AVCB
+                          </div>
+                        </td>
+                        <td>CHM101</td>
+                        <td>Thùy Linh</td>
+                        <td>1,200,000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="checkbox-col">
+                          <input
+                            type="checkbox"
+                            class="course-checkbox"
+                            data-id="MTH101"
+                            data-fee="1000000"
+                            checked
+                          />
+                        </td>
+                        <td>
+                          <div class="course-name">
+                            <i class="fas fa-square-root-alt"></i>
+                            Thiết kế web
+                          </div>
+                        </td>
+                        <td>MTH101</td>
+                        <td>Mạnh ĐỨc</td>
+                        <td>1,200,000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="checkbox-col">
+                          <input
+                            type="checkbox"
+                            class="course-checkbox"
+                            data-id="ENG101"
+                            data-fee="1800000"
+                          />
+                        </td>
+                        <td>
+                          <div class="course-name">
+                            <i class="fas fa-language"></i>
+                            Lập trình net C#
+                          </div>
+                        </td>
+                        <td>ENG101</td>
+                        <td>Hồ Hải</td>
+                        <td>1,800,000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="checkbox-col">
+                          <input
+                            type="checkbox"
+                            class="course-checkbox"
+                            data-id="LIT101"
+                            data-fee="900000"
+                          />
+                        </td>
+                        <td>
+                          <div class="course-name">
+                            <i class="fas fa-book"></i>
+                            Tương tác người và máy
+                          </div>
+                        </td>
+                        <td>LIT101</td>
+                        <td>Nhựt Trí</td>
+                        <td>900,000 VNĐ</td>
+                      </tr>
+                      <tr>
+                        <td class="checkbox-col">
+                          <input
+                            type="checkbox"
+                            class="course-checkbox"
+                            data-id="PE101"
+                            data-fee="700000"
+                          />
+                        </td>
+                        <td>
+                          <div class="course-name">
+                            <i class="fas fa-dumbbell"></i>
+                            IOTIOT
+                          </div>
+                        </td>
+                        <td>PE101</td>
+                        <td>Duy Hùng</td>
+                        <td>700,000 VNĐ</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="summary-container">
+                  <div class="summary-card" data-aos="fade-up">
+                    <h3>Tổng Thanh Toán</h3>
+                    <div class="summary-details">
+                      <div class="summary-row">
+                        <span>Tổng số môn:</span>
+                        <span id="total-courses">6</span>
+                      </div>
+                      <div class="summary-row">
+                        <span>Môn đã chọn:</span>
+                        <span id="selected-courses">3</span>
+                      </div>
+                      <div class="summary-divider"></div>
+                      <div class="summary-row total">
+                        <span>Tổng học phí:</span>
+                        <span id="total-amount">3,700,000 VNĐ</span>
+                      </div>
+                    </div>
+                    <button
+                      id="next-to-payment"
+                      class="btn btn-primary btn-block"
+                    >
+                      Tiếp tục thanh toán
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="payment-step" id="payment-info">
+              <div class="payment-form" data-aos="fade-up">
+                <div class="form-group">
+                  <label for="payer-name">Họ tên người thanh toán</label>
+                  <input
+                    type="text"
+                    id="payer-name"
+                    class="form-input"
+                    placeholder="Nhập họ tên đầy đủ"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="payer-email">Email</label>
+                  <input
+                    type="email"
+                    id="payer-email"
+                    class="form-input"
+                    placeholder="email@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="payer-phone">Số điện thoại</label>
+                  <input
+                    type="tel"
+                    id="payer-phone"
+                    class="form-input"
+                    placeholder="0123456789"
+                    required
+                  />
+                </div>
+
+                <div class="form-group payment-method-group">
+                  <label>Phương thức thanh toán</label>
+                  <div class="payment-methods-select">
+                    <div
+                      class="payment-method active"
+                      data-method="credit-card"
+                    >
+                      <i class="fas fa-credit-card"></i>
+                      <span>Thẻ tín dụng/ghi nợ</span>
+                    </div>
+                    <div class="payment-method" data-method="bank-transfer">
+                      <i class="fas fa-university"></i>
+                      <span>Chuyển khoản</span>
+                    </div>
+                    <div class="payment-method" data-method="e-wallet">
+                      <i class="fas fa-wallet"></i>
+                      <span>Ví điện tử</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="payment-details" id="credit-card-details">
+                  <div class="form-group">
+                    <label for="card-number">Số thẻ</label>
+                    <input
+                      type="text"
+                      id="card-number"
+                      class="form-input"
+                      placeholder="XXXX XXXX XXXX XXXX"
+                      maxlength="19"
+                    />
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="card-expiry">Ngày hết hạn</label>
+                      <input
+                        type="text"
+                        id="card-expiry"
+                        class="form-input"
+                        placeholder="MM/YY"
+                        maxlength="5"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="card-cvv">CVV</label>
+                      <input
+                        type="text"
+                        id="card-cvv"
+                        class="form-input"
+                        placeholder="XXX"
+                        maxlength="3"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="card-name">Tên chủ thẻ</label>
+                    <input
+                      type="text"
+                      id="card-name"
+                      class="form-input"
+                      placeholder="NGUYEN VAN A"
+                    />
+                  </div>
+                </div>
+                <div class="payment-details hidden" id="bank-transfer-details">
+                  <div class="bank-details">
+                    <h4>Thông tin tài khoản ngân hàng:</h4>
+                    <p><strong>Ngân hàng:</strong> Vietcombank</p>
+                    <p><strong>Số tài khoản:</strong> 1234567890</p>
+                    <p><strong>Chủ tài khoản:</strong> TRUONG HOC XYZ</p>
+                    <p>
+                      <strong>Nội dung chuyển khoản:</strong>
+                      <span id="transfer-code">HP.26TH01.123456</span>
+                    </p>
+                    <p class="note">
+                      Lưu ý: Vui lòng chuyển khoản với nội dung chính xác như
+                      trên và tải lên biên lai.
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <label for="transfer-receipt">Biên lai chuyển khoản</label>
+                    <input
+                      type="file"
+                      id="transfer-receipt"
+                      class="form-input"
+                    />
+                  </div>
+                </div>
+                <div class="payment-details hidden" id="e-wallet-details">
+                  <div class="wallet-options">
+                    <div class="wallet-option">
+                      <input type="radio" name="wallet" id="momo" checked />
+                      <label for="momo">MoMo</label>
+                    </div>
+                    <div class="wallet-option">
+                      <input type="radio" name="wallet" id="zalopay" />
+                      <label for="zalopay">ZaloPay</label>
+                    </div>
+                    <div class="wallet-option">
+                      <input type="radio" name="wallet" id="vnpay" />
+                      <label for="vnpay">VNPay</label>
+                    </div>
+                  </div>
+                  <p class="wallet-note">
+                    Bạn sẽ được chuyển đến trang thanh toán của ví điện tử sau
+                    khi xác nhận.
+                  </p>
+                </div>
+
+                <div class="payment-actions">
+                  <button id="back-to-courses" class="btn btn-outline">
+                    Quay lại
+                  </button>
+                  <button id="proceed-to-confirm" class="btn btn-primary">
+                    Tiếp tục
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="payment-step" id="confirmation">
+              <div class="confirmation-content" data-aos="fade-up">
+                <div class="confirmation-header">
+                  <i class="fas fa-check-circle"></i>
+                  <h3>Xác nhận thông tin thanh toán</h3>
+                  <p>
+                    Vui lòng kiểm tra kỹ thông tin trước khi tiến hành thanh
+                    toán
+                  </p>
+                </div>
+
+                <div class="confirmation-details">
+                  <div class="confirmation-section">
+                    <h4>Thông tin học sinh</h4>
+                    <div class="detail-row">
+                      <span>Mã học sinh:</span>
+                      <span id="confirm-student-id">123456</span>
+                    </div>
+                    <div class="detail-row">
+                      <span>Lớp:</span>
+                      <span id="confirm-class">26TH01</span>
+                    </div>
+                    <div class="detail-row">
+                      <span>Học kỳ:</span>
+                      <span id="confirm-semester">Học kỳ I (2023-2024)</span>
+                    </div>
+                  </div>
+
+                  <div class="confirmation-section">
+                    <h4>Danh sách môn học</h4>
+                    <div id="confirm-courses-list">
+                      <div class="confirm-course-item">
+                        <span>Vật Lý (PHY101)</span>
+                        <span>1,200,000 VNĐ</span>
+                      </div>
+                      <div class="confirm-course-item">
+                        <span>Hóa Học (CHM101)</span>
+                        <span>1,500,000 VNĐ</span>
+                      </div>
+                      <div class="confirm-course-item">
+                        <span>Toán (MTH101)</span>
+                        <span>1,000,000 VNĐ</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="confirmation-section">
+                    <h4>Thông tin thanh toán</h4>
+                    <div class="detail-row">
+                      <span>Họ tên người thanh toán:</span>
+                      <span id="confirm-payer-name">Nguyễn Văn A</span>
+                    </div>
+                    <div class="detail-row">
+                      <span>Email:</span>
+                      <span id="confirm-payer-email">example@gmail.com</span>
+                    </div>
+                    <div class="detail-row">
+                      <span>Số điện thoại:</span>
+                      <span id="confirm-payer-phone">0123456789</span>
+                    </div>
+                    <div class="detail-row">
+                      <span>Phương thức thanh toán:</span>
+                      <span id="confirm-payment-method"
+                        >Thẻ tín dụng/ghi nợ</span
+                      >
+                    </div>
+                    <div class="detail-row total">
+                      <span>Tổng thanh toán:</span>
+                      <span id="confirm-total-amount">3,700,000 VNĐ</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="terms-agreement">
+                  <input type="checkbox" id="terms-checkbox" />
+                  <label for="terms-checkbox"
+                    >Tôi đồng ý với
+                    <a href="#">các điều khoản và điều kiện</a> về việc thanh
+                    toán học phí</label
+                  >
+                </div>
+
+                <div class="payment-actions">
+                  <button id="back-to-payment-info" class="btn btn-outline">
+                    Quay lại
+                  </button>
+                  <button id="complete-payment" class="btn btn-primary">
+                    Hoàn tất thanh toán
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal" id="receipt-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="receipt">
+          <div class="receipt-header">
+            <div class="school-info">
+              <h2>Trường Học XYZ</h2>
+              <p>123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+              <p>Email: info@truonghocxyz.edu.vn | SĐT: 0123 456 789</p>
+            </div>
+            <div class="receipt-title">
+              <h1>BIÊN LAI ĐÓNG HỌC PHÍ</h1>
+              <p>Mã thanh toán: <span id="receipt-id">TT-123456</span></p>
+              <p>Ngày: <span id="receipt-date">01/07/2023</span></p>
+            </div>
+          </div>
+
+          <div class="receipt-body">
+            <div class="receipt-section">
+              <h3>Thông tin học sinh</h3>
+              <div class="receipt-row">
+                <span>Mã học sinh:</span>
+                <span id="receipt-student-id">123456</span>
+              </div>
+              <div class="receipt-row">
+                <span>Lớp:</span>
+                <span id="receipt-class">26TH01</span>
+              </div>
+              <div class="receipt-row">
+                <span>Học kỳ:</span>
+                <span id="receipt-semester">Học kỳ I (2023-2024)</span>
+              </div>
+            </div>
+
+            <div class="receipt-section">
+              <h3>Chi tiết thanh toán</h3>
+              <table class="receipt-courses">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Môn học</th>
+                    <th>Mã môn</th>
+                    <th>Học phí (VNĐ)</th>
+                  </tr>
+                </thead>
+                <tbody id="receipt-courses-body">
+                  <tr>
+                    <td>1</td>
+                    <td>Thết kế web</td>
+                    <td>WEB01</td>
+                    <td>1,200,000 VNĐ</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>AVCB5</td>
+                    <td>AV03</td>
+                    <td>1,500,000 VNĐ</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Công nghệ IOT</td>
+                    <td>IOT04</td>
+                    <td>1,000,000 VNĐ</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3" class="total-label">Tổng cộng:</td>
+                    <td id="receipt-total" class="total-amount">
+                      3,700,000 VNĐ
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+
+            <div class="receipt-section">
+              <h3>Thông tin thanh toán</h3>
+              <div class="receipt-row">
+                <span>Người thanh toán:</span>
+                <span id="receipt-payer-name">Hoàng Duy Khánh</span>
+              </div>
+              <div class="receipt-row">
+                <span>Phương thức:</span>
+                <span id="receipt-payment-method">Thẻ tín dụng/ghi nợ</span>
+              </div>
+              <div class="receipt-row">
+                <span>Trạng thái:</span>
+                <span class="payment-status success">Thành công</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="receipt-footer">
+            <p>Cảm ơn bạn đã thanh toán học phí!</p>
+            <p>Biên lai này có giá trị như chứng từ thanh toán.</p>
+            <div class="receipt-actions">
+              <button id="print-receipt" class="btn btn-outline">
+                <i class="fas fa-print"></i> In biên lai
+              </button>
+              <button id="download-receipt" class="btn btn-primary">
+                <i class="fas fa-download"></i> Tải biên lai
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="payment-history">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Lịch Sử Thanh Toán</h2>
+          <p>Theo dõi các khoản học phí đã thanh toán</p>
+        </div>
+
+        <div class="history-container" data-aos="fade-up">
+          <div class="filter-controls">
+            <div class="search-bar">
+              <input
+                type="text"
+                id="search-history"
+                placeholder="Tìm kiếm theo mã học sinh..."
+              />
+              <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-buttons">
+              <button class="active" data-filter="all">Tất cả</button>
+              <button data-filter="current">Học kỳ hiện tại</button>
+              <button data-filter="previous">Học kỳ trước</button>
+            </div>
+          </div>
+
+          <div class="history-table-container">
+            <table class="history-table">
+              <thead>
+                <tr>
+                  <th>Mã thanh toán</th>
+                  <th>Ngày thanh toán</th>
+                  <th>Học kỳ</th>
+                  <th>Số môn</th>
+                  <th>Tổng tiền</th>
+                  <th>Trạng thái</th>
+                  <th>Hành động</th>
+                </tr>
+              </thead>
+              <tbody id="history-tbody">
+                <tr class="no-records">
+                  <td colspan="7">Chưa có lịch sử thanh toán</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-cta">
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <h2>Bạn cần hỗ trợ về việc đóng học phí?</h2>
+          <p>
+            Liên hệ với phòng tài chính của chúng tôi để được giải đáp mọi thắc
+            mắc
+          </p>
+          <div class="cta-buttons">
+            <a href="tel:0123456789" class="btn btn-outline">
+              <i class="fas fa-phone-alt"></i> Gọi ngay
+            </a>
+            <a href="contact.html" class="btn btn-primary">
+              <i class="fas fa-envelope"></i> Gửi tin nhắn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <img src="./images/school-logo.svg" alt="Logo Trường Học" />
+              <h3>Trường Học XYZ</h3>
+            </div>
+            <p>
+              Chất lượng - Sáng tạo - Phát triển. Môi trường học tập lý tưởng
+              cho thế hệ tương lai.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Liên kết</h3>
+            <ul class="footer-links">
+              <li><a href="/main.html">Trang chủ</a></li>
+              <li><a href="/tkb.html">Thời khóa biểu</a></li>
+              <li><a href="/thongbao.html">Thông báo</a></li>
+              <li><a href="/sport.html">Hoạt động thể thao</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Thông tin liên hệ</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                TP. Hồ Chí Minh
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:0123456789">0123 456 789</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@truonghocxyz.edu.vn"
+                  >info@truonghocxyz.edu.vn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Giờ làm việc</h3>
+            <ul class="working-hours">
+              <li><span>Thứ Hai - Thứ Sáu:</span> 7:00 - 17:00</li>
+              <li><span>Thứ Bảy:</span> 7:00 - 12:00</li>
+              <li><span>Chủ Nhật:</span> Đóng cửa</li>
+            </ul>
+            <div class="newsletter">
+              <h4>Đăng ký nhận tin</h4>
+              <form>
+                <input type="email" placeholder="Email của bạn" required />
+                <button type="submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Trường Học XYZ. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/hocphi.js"></script>
+  </body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thông Tin - Trường Học XYZ</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/information.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="logo">
+            <img src="../images/school-logo.svg" alt="Logo Trường Học" />
+            <div class="school-name">
+              <h1>Trường Học XYZ</h1>
+              <p>Chất lượng - Sáng tạo - Phát triển</p>
+            </div>
+          </div>
+          <div class="header-contact">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <span>Liên hệ</span>
+                <a href="tel:0123456789">0123 456 789</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:info@truonghocxyz.edu.vn"
+                  >info@truonghocxyz.edu.vn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="../index.html">Trang chủ</a></li>
+            <li class="dropdown active">
+              <a href="information.html"
+                >Thông tin <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="/tkb.html">Thời khóa biểu</a></li>
+                <li><a href="/xemdien.html">Xem điểm</a></li>
+                <li><a href="/lichthi.html">Lịch thi</a></li>
+                <li><a href="/hocphi.html">Học phí</a></li>
+                <li><a href="pay-tuition.html">Đóng học phí</a></li>
+              </ul>
+            </li>
+            <li><a href="/sport.html">Hoạt động thể thao</a></li>
+            <li><a href="/thongbao.html">Thông báo</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+          <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="page-title">
+      <div class="container">
+        <h1>Thông Tin Học Sinh</h1>
+        <div class="breadcrumb">
+          <a href="/main.html">Trang chủ</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <span class="current">Thông tin</span>
+        </div>
+      </div>
+    </section>
+    <section class="info-services">
+      <div class="container">
+        <div class="section-title">
+          <h2>Dịch vụ Thông Tin</h2>
+          <p>
+            Truy cập các dịch vụ thông tin học sinh một cách nhanh chóng và
+            thuận tiện
+          </p>
+        </div>
+        <div class="info-grid">
+          <div class="info-card" data-aos="fade-up">
+            <div class="info-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h3>Thời Khóa Biểu</h3>
+            <p>
+              Truy cập thời khóa biểu cập nhật. Xem lịch học theo tuần, tháng
+              hoặc học kỳ.
+            </p>
+            <div class="info-hover">
+              <ul>
+                <li>Xem lịch học theo tuần</li>
+                <li>Lọc theo môn học</li>
+                <li>Tải về định dạng PDF</li>
+                <li>Nhận thông báo thay đổi</li>
+              </ul>
+              <a href="schedule.html" class="btn btn-outline">Xem Lịch</a>
+            </div>
+          </div>
+          <div class="info-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="info-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Bảng Điểm</h3>
+            <p>
+              Truy cập điểm số học tập, điểm kiểm tra, bài tập và thành tích
+              theo từng môn học.
+            </p>
+            <div class="info-hover">
+              <ul>
+                <li>Điểm kiểm tra thường xuyên</li>
+                <li>Điểm thi giữa kỳ và cuối kỳ</li>
+                <li>Biểu đồ phân tích xu hướng</li>
+                <li>So sánh với điểm trung bình lớp</li>
+              </ul>
+              <a href="/xemdien.html" class="btn btn-outline">Xem Điểm</a>
+            </div>
+          </div>
+          <div class="info-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="info-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Lịch Thi</h3>
+            <p>
+              Kiểm tra lịch thi giữa kỳ, cuối kỳ và các kỳ thi đặc biệt khác
+              trong năm học.
+            </p>
+            <div class="info-hover">
+              <ul>
+                <li>Xem phòng thi chi tiết</li>
+                <li>Hướng dẫn quy chế thi</li>
+                <li>Tài liệu ôn tập</li>
+                <li>Nhận thông báo nhắc nhở</li>
+              </ul>
+              <a href="/lichthi.html" class="btn btn-outline">Xem Lịch Thi</a>
+            </div>
+          </div>
+          <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-icon">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <h3>Thông Tin Học Phí</h3>
+            <p>
+              Xem thông tin về học phí, các khoản phí và lịch sử thanh toán học
+              phí các kỳ trước.
+            </p>
+            <div class="info-hover">
+              <ul>
+                <li>Biểu phí chi tiết</li>
+                <li>Lịch sử thanh toán</li>
+                <li>Hạn chót đóng phí</li>
+                <li>Chính sách miễn giảm</li>
+              </ul>
+              <a href="tuition.html" class="btn btn-outline">Xem Chi Tiết</a>
+            </div>
+          </div>
+          <div class="info-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="info-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <h3>Đóng Học Phí</h3>
+            <p>
+              Thanh toán học phí trực tuyến qua nhiều phương thức an toàn và
+              thuận tiện.
+            </p>
+            <div class="info-hover">
+              <ul>
+                <li>Thanh toán qua thẻ ngân hàng</li>
+                <li>Chuyển khoản trực tiếp</li>
+                <li>Ví điện tử</li>
+                <li>Thanh toán định kỳ tự động</li>
+              </ul>
+              <a href="pay-tuition.html" class="btn btn-outline"
+                >Thanh Toán Ngay</a
+              >
+            </div>
+          </div>
+          <div class="info-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="info-icon">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+            <h3>Tài Liệu Học Tập</h3>
+            <p>
+              Truy cập tài liệu học tập, giáo trình, bài giảng và tài nguyên bổ
+              sung cho các môn học.
+            </p>
+            <div class="info-hover">
+              <ul>
+                <li>Giáo trình theo môn học</li>
+                <li>Bài tập và đáp án</li>
+                <li>Video bài giảng</li>
+                <li>Tài liệu tham khảo thêm</li>
+              </ul>
+              <a href="#" class="btn btn-outline">Xem Tài Liệu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Câu Hỏi Thường Gặp</h2>
+          <p>Giải đáp các thắc mắc phổ biến về thông tin học sinh</p>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-item" data-aos="fade-right">
+            <div class="faq-question">
+              <h4>Làm cách nào để xem thời khóa biểu của tôi?</h4>
+              <span class="faq-toggle"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Để xem thời khóa biểu, bạn cần đăng nhập vào hệ thống bằng tài
+                khoản học sinh, sau đó nhấp vào mục "Thời khóa biểu" trong phần
+                Thông tin. Bạn có thể xem thời khóa biểu theo tuần, tháng hoặc
+                học kỳ và có thể in hoặc tải xuống dưới dạng PDF.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-right" data-aos-delay="100">
+            <div class="faq-question">
+              <h4>Khi nào điểm số được cập nhật trên hệ thống?</h4>
+              <span class="faq-toggle"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Điểm số thường được cập nhật trong vòng 1-2 tuần sau khi giáo
+                viên hoàn thành chấm bài. Điểm kiểm tra thường xuyên sẽ được cập
+                nhật nhanh hơn so với điểm thi giữa kỳ hoặc cuối kỳ. Hệ thống sẽ
+                gửi thông báo cho bạn mỗi khi có cập nhật mới về điểm số.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-right" data-aos-delay="200">
+            <div class="faq-question">
+              <h4>Có những phương thức thanh toán học phí nào?</h4>
+              <span class="faq-toggle"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Trường chấp nhận nhiều phương thức thanh toán học phí như:
+                chuyển khoản ngân hàng, thanh toán trực tuyến qua thẻ tín
+                dụng/ghi nợ, ví điện tử (MoMo, ZaloPay, VNPay), và thanh toán
+                trực tiếp tại phòng Tài chính của trường. Bạn cũng có thể thiết
+                lập thanh toán tự động theo kỳ để tránh trễ hạn.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-right" data-aos-delay="300">
+            <div class="faq-question">
+              <h4>Làm thế nào để biết lịch thi của tôi?</h4>
+              <span class="faq-toggle"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Lịch thi sẽ được thông báo trên hệ thống ít nhất 2 tuần trước kỳ
+                thi. Bạn có thể truy cập mục "Lịch thi" trong phần Thông tin để
+                xem chi tiết về thời gian, địa điểm và môn thi. Ngoài ra, bạn
+                cũng sẽ nhận được email thông báo về lịch thi.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-aos="fade-right" data-aos-delay="400">
+            <div class="faq-question">
+              <h4>Tôi quên mật khẩu đăng nhập, phải làm sao?</h4>
+              <span class="faq-toggle"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Nếu bạn quên mật khẩu, hãy nhấp vào liên kết "Quên mật khẩu"
+                trên trang đăng nhập. Hệ thống sẽ gửi hướng dẫn đặt lại mật khẩu
+                về email đã đăng ký của bạn. Nếu bạn không thể truy cập email,
+                vui lòng liên hệ với phòng Công nghệ thông tin của trường theo
+                số 0123.456.789 để được hỗ trợ.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stats-item" data-aos="zoom-in">
+            <div class="stats-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stats-number" data-count="5000">0</div>
+            <h4>Lượt truy cập hàng ngày</h4>
+          </div>
+          <div class="stats-item" data-aos="zoom-in" data-aos-delay="100">
+            <div class="stats-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="stats-number" data-count="95">0</div>
+            <h4>% Độ hài lòng</h4>
+          </div>
+          <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stats-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <div class="stats-number" data-count="1200">0</div>
+            <h4>Tài liệu học tập</h4>
+          </div>
+          <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="stats-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <div class="stats-number" data-count="24">0</div>
+            <h4>Hỗ trợ 24/7</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Cần hỗ trợ thêm?</h2>
+          <p>
+            Nếu bạn gặp khó khăn trong việc truy cập thông tin hoặc có câu hỏi
+            khác, hãy liên hệ với đội ngũ hỗ trợ của chúng tôi.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Liên Hệ Ngay</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <div class="footer-logo">
+                <img src="/hinh5.png" alt="Logo Trường Học" />
+                <h3>Trường Học XYZ</h3>
+              </div>
+              <p>
+                Nơi ươm mầm tài năng, phát triển toàn diện giá trị con người.
+                Chúng tôi cam kết cung cấp môi trường học tập hiện đại, sáng tạo
+                và thân thiện.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Liên kết nhanh</h4>
+              <ul>
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="/main.html">Thông tin</a></li>
+                <li><a href="/sport.html">Hoạt động thể thao</a></li>
+                <li><a href="/thongbao.html">Thông báo</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Thông tin học sinh</h4>
+              <ul>
+                <li><a href="/tkb.html">Thời khóa biểu</a></li>
+                <li><a href="/xemdien.html">Xem điểm</a></li>
+                <li><a href="/lichthi.html">Lịch thi</a></li>
+                <li><a href="/hocphi.html">Học phí</a></li>
+                <li><a href="pay-tuition.html">Đóng học phí</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Thông tin liên hệ</h4>
+              <div class="contact-info">
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                  Thành phố HCM
+                </p>
+                <p><i class="fas fa-phone"></i> 0123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@truonghocxyz.edu.vn</p>
+                <p>
+                  <i class="fas fa-clock"></i> Thứ Hai - Thứ Sáu: 7:00 - 17:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 Trường Học XYZ. Tất cả quyền được bảo lưu.</p>
+          <div class="footer-links">
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="about.html" class="author-link">Giới thiệu</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="/js/information.js"></script>
+  </body>
+</html>

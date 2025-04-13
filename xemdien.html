@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xem Điểm - Trường Học XYZ</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/xemdiem.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="logo">
+            <img src="../images/school-logo.svg" alt="Logo Trường Học" />
+            <div class="school-name">
+              <h1>Trường Học XYZ</h1>
+              <p>Chất lượng - Sáng tạo - Phát triển</p>
+            </div>
+          </div>
+          <div class="header-contact">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <span>Liên hệ</span>
+                <a href="tel:0123456789">0123 456 789</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:info@truonghocxyz.edu.vn"
+                  >info@truonghocxyz.edu.vn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="./main.html">Trang chủ</a></li>
+            <li class="dropdown">
+              <a href="information.html"
+                >Thông tin <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="/tkb.html">Thời khóa biểu</a></li>
+                <li><a href="/xemdien.html">Xem điểm</a></li>
+                <li><a href="/lichthi.html">Lịch thi</a></li>
+                <li><a href="/hocphi.html">Học phí</a></li>
+              </ul>
+            </li>
+            <li><a href="sports.html">Hoạt động thể thao</a></li>
+            <li><a href="./thongbao.html">Thông báo</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+      <div class="container">
+        <h1>Xem Điểm</h1>
+        <div class="breadcrumb">
+          <a href="/main.html">Trang chủ</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <a href="information.html">Thông tin</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <span class="current">Xem điểm</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="grades-intro">
+      <div class="container">
+        <div class="intro-content">
+          <div class="intro-text" data-aos="fade-right">
+            <h2>Kết Quả Học Tập</h2>
+            <p>
+              Hệ thống cung cấp thông tin chi tiết về điểm số các môn học trong
+              học kỳ. Bạn có thể theo dõi tiến độ học tập và cải thiện kết quả.
+            </p>
+            <p>
+              Điểm số được cập nhật tự động sau mỗi bài kiểm tra. Phụ huynh và
+              học sinh có thể theo dõi dễ dàng qua hệ thống trực tuyến.
+            </p>
+            <a href="/xemdien.html" class="btn btn-primary">Xem điểm ngay</a>
+          </div>
+          <div class="intro-image" data-aos="fade-left">
+            <img src="../images/grades-intro.jpg" alt="Kết quả học tập" />
+            <div class="overlay-text">
+              <div class="overlay-content">
+                <h3>"Học tập có kế hoạch - Thành công vững bền"</h3>
+                <p>Theo dõi điểm số - Nâng cao kết quả học tập</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grades-filter">
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-group">
+            <label for="semester-select">Học kỳ:</label>
+            <select id="semester-select" class="form-select">
+              <option value="semester1">Học kỳ 1</option>
+              <option value="semester2" selected>Học kỳ 2</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="year-select">Năm học:</label>
+            <select id="year-select" class="form-select">
+              <option value="2023-2024" selected>2023-2024</option>
+              <option value="2022-2023">2022-2023</option>
+            </select>
+          </div>
+          <button id="view-grades-btn" class="btn btn-primary">
+            <i class="fas fa-search"></i> Xem điểm
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="grades-table" class="grades-table-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Bảng Điểm Chi Tiết</h2>
+          <p>Điểm số các môn học trong học kỳ hiện tại</p>
+        </div>
+
+        <div class="grades-table-container" data-aos="fade-up">
+          <div class="table-responsive">
+            <table class="grades-table">
+              <thead>
+                <tr>
+                  <th>Môn học</th>
+                  <th>Điểm QT</th>
+                  <th>Điểm GK</th>
+                  <th>Điểm CK</th>
+                  <th>Điểm TB</th>
+                  <th>Xếp loại</th>
+                  <th>Nhận xét</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-aos="fade-up">
+                  <td>
+                    <div class="subject-info">
+                      <div class="subject-icon">
+                        <i class="fas fa-globe"></i>
+                      </div>
+                      <div class="subject-name">
+                        <h4>Công nghệ IoT</h4>
+                        <p>GV: Nguyễn Văn A</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>8.5</td>
+                  <td>8.0</td>
+                  <td>9.0</td>
+                  <td>8.6</td>
+                  <td><span class="grade-badge excellent">Giỏi</span></td>
+                  <td>Tiếp tục phát huy</td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-delay="100">
+                  <td>
+                    <div class="subject-info">
+                      <div class="subject-icon">
+                        <i class="fas fa-laptop-code"></i>
+                      </div>
+                      <div class="subject-name">
+                        <h4>Thiết kế Web</h4>
+                        <p>GV: Trần Thị B</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>7.5</td>
+                  <td>8.5</td>
+                  <td>8.0</td>
+                  <td>8.0</td>
+                  <td><span class="grade-badge good">Khá</span></td>
+                  <td>Cần cải thiện phần backend</td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-delay="200">
+                  <td>
+                    <div class="subject-info">
+                      <div class="subject-icon">
+                        <i class="fas fa-microchip"></i>
+                      </div>
+                      <div class="subject-name">
+                        <h4>AVCB5</h4>
+                        <p>GV: Lê Văn C</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>9.0</td>
+                  <td>9.5</td>
+                  <td>9.0</td>
+                  <td>9.2</td>
+                  <td><span class="grade-badge excellent">Xuất sắc</span></td>
+                  <td>Rất tốt, tiếp tục phát huy</td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-delay="300">
+                  <td>
+                    <div class="subject-info">
+                      <div class="subject-icon">
+                        <i class="fas fa-user-tie"></i>
+                      </div>
+                      <div class="subject-name">
+                        <h4>Tương tác người máy</h4>
+                        <p>GV: Phạm Thị D</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>7.0</td>
+                  <td>7.5</td>
+                  <td>8.0</td>
+                  <td>7.6</td>
+                  <td><span class="grade-badge good">Khá</span></td>
+                  <td>Cần chú ý phần thiết kế giao diện</td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-delay="400">
+                  <td>
+                    <div class="subject-info">
+                      <div class="subject-icon">
+                        <i class="fas fa-code"></i>
+                      </div>
+                      <div class="subject-name">
+                        <h4>Lập trình .NET</h4>
+                        <p>GV: Hoàng Văn E</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>8.0</td>
+                  <td>8.5</td>
+                  <td>8.5</td>
+                  <td>8.4</td>
+                  <td><span class="grade-badge excellent">Giỏi</span></td>
+                  <td>Nắm vững kiến thức</td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-delay="500">
+                  <td>
+                    <div class="subject-info">
+                      <div class="subject-icon">
+                        <i class="fa-solid fa-c"></i>
+                      </div>
+                      <div class="subject-name">
+                        <h4>Lập trình C#</h4>
+                        <p>GV: Vũ Thị F</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>8.5</td>
+                  <td>9.0</td>
+                  <td>9.0</td>
+                  <td>8.8</td>
+                  <td><span class="grade-badge excellent">Giỏi</span></td>
+                  <td>Code rất tốt, logic rõ ràng</td>
+                </tr>
+                <tr data-aos="fade-up" data-aos-delay="600">
+                  <td>
+                    <div class="subject-info">
+                      <div class="subject-icon">
+                        <i class="fas fa-shield-alt"></i>
+                      </div>
+                      <div class="subject-name">
+                        <h4>Quốc phòng</h4>
+                        <p>GV: Trần Văn G</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>9.0</td>
+                  <td>9.0</td>
+                  <td>9.5</td>
+                  <td>9.2</td>
+                  <td><span class="grade-badge excellent">Xuất sắc</span></td>
+                  <td>Thực hiện tốt các nội dung</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="grades-summary" data-aos="fade-up">
+          <div class="summary-card">
+            <div class="summary-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="summary-content">
+              <h3>8.4</h3>
+              <p>Điểm trung bình</p>
+            </div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="summary-content">
+              <h3>5</h3>
+              <p>Môn đạt loại Giỏi</p>
+            </div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="summary-content">
+              <h3>2</h3>
+              <p>Môn đạt loại Khá</p>
+            </div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="summary-content">
+              <h3>2</h3>
+              <p>Môn đạt Xuất sắc</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="performance-chart">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Biểu Đồ Tiến Bộ</h2>
+          <p>So sánh điểm số giữa các học kỳ</p>
+        </div>
+        <div class="chart-container" data-aos="fade-up">
+          <canvas id="grades-chart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <div class="footer-logo">
+                <img
+                  src="../images/school-logo-white.svg"
+                  alt="Logo Trường Học"
+                />
+                <h3>Trường Học XYZ</h3>
+              </div>
+              <p>
+                Nơi ươm mầm tài năng, phát triển toàn diện giá trị con người.
+                Chúng tôi cam kết cung cấp môi trường học tập hiện đại, sáng tạo
+                và thân thiện.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Liên kết nhanh</h4>
+              <ul>
+                <li><a href="../index.html">Trang chủ</a></li>
+                <li><a href="information.html">Thông tin</a></li>
+                <li><a href="sports.html">Hoạt động thể thao</a></li>
+                <li><a href="announcements.html">Thông báo</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Thông tin học sinh</h4>
+              <ul>
+                <li><a href="/tkb.html">Thời khóa biểu</a></li>
+                <li><a href="/xemdien.html">Xem điểm</a></li>
+                <li><a href="exam-schedule.html">Lịch thi</a></li>
+                <li><a href="tuition.html">Học phí</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Thông tin liên hệ</h4>
+              <div class="contact-info">
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                  Thành phố HCM
+                </p>
+                <p><i class="fas fa-phone"></i> 0123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@truonghocxyz.edu.vn</p>
+                <p>
+                  <i class="fas fa-clock"></i> Thứ Hai - Thứ Sáu: 7:00 - 17:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 Trường Học XYZ. Tất cả quyền được bảo lưu.</p>
+          <div class="footer-links">
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="about.html" class="author-link">Giới thiệu</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="/js/xemdiem.js"></script>
+  </body>
+</html>

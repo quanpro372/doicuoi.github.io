@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lịch Thi - Trường Học XYZ</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/lichthi.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="logo">
+            <img src="/hinh5.png" alt="Logo Trường Học" />
+            <div class="school-name">
+              <h1>Trường Học XYZ</h1>
+              <p>Chất lượng - Sáng tạo - Phát triển</p>
+            </div>
+          </div>
+          <div class="header-contact">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <span>Liên hệ</span>
+                <a href="tel:0123456789">0123 456 789</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:info@truonghocxyz.edu.vn"
+                  >info@truonghocxyz.edu.vn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="./main.html">Trang chủ</a></li>
+            <li class="dropdown">
+              <a href="information.html"
+                >Thông tin <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li>
+                  <a href="/tkb.html">Thời khóa biểu</a>
+                </li>
+                <li><a href="/xemdien.html">Xem điểm</a></li>
+                <li class="active">
+                  <a href="/lichthi.html">Lịch thi</a>
+                </li>
+                <li><a href="/hocphi.html">Học phí</a></li>
+                <li><a href="pay-tuition.html">Đóng học phí</a></li>
+              </ul>
+            </li>
+            <li><a href="/sport.html">Hoạt động thể thao</a></li>
+            <li><a href="/thongbao.html">Thông báo</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+      <div class="container">
+        <h1>Lịch Thi</h1>
+        <div class="breadcrumb">
+          <a href="/main.html">Trang chủ</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <a href="/main.html">Thông tin</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <span class="current">Lịch thi</span>
+        </div>
+      </div>
+    </section>
+    <section class="schedule-intro">
+      <div class="container">
+        <div class="intro-content">
+          <div class="intro-text" data-aos="fade-right">
+            <h2>Lịch Thi Học Kỳ</h2>
+            <p>
+              Lịch thi được thiết kế phù hợp với lịch học và chương trình đào
+              tạo, giúp sinh viên có thời gian ôn tập và chuẩn bị tốt nhất cho
+              kỳ thi.
+            </p>
+            <p>
+              Sinh viên cần theo dõi lịch thi thường xuyên để cập nhật những
+              thay đổi về thời gian, địa điểm và hình thức thi.
+            </p>
+            <a href="/lichthi.html" class="btn btn-primary">Xem lịch thi</a>
+          </div>
+          <div class="intro-image" data-aos="fade-left">
+            <img src="/hinh7.jpg" alt="Lịch thi" />
+            <div class="overlay-text">
+              <div class="overlay-content">
+                <h3>"Chuẩn bị kỹ lưỡng - Thi đạt kết quả cao"</h3>
+                <p>Kiến thức vững chắc - Thành công trong tầm tay</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="exam-schedule" class="weekly-schedule">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Lịch Thi Học Kỳ I (2023-2024)</h2>
+          <p>Thông tin lịch thi và hình thức thi của các môn học</p>
+        </div>
+
+        <div class="schedule-filter" data-aos="fade-up">
+          <div class="filter-group">
+            <label for="class-select">Lớp:</label>
+            <select id="class-select" class="form-select">
+              <option value="CNTT01">CNTT01</option>
+              <option value="CNTT02">CNTT02</option>
+              <option value="CNTT03">CNTT03</option>
+              <option value="CNTT04">CNTT04</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="student-id">Mã sinh viên:</label>
+            <input
+              type="text"
+              id="student-id"
+              class="form-input"
+              value="123456"
+              placeholder="Nhập mã sinh viên"
+            />
+          </div>
+          <div class="filter-group">
+            <label for="semester-select">Học kỳ:</label>
+            <select id="semester-select" class="form-select">
+              <option value="1">Học kỳ I (2023-2024)</option>
+              <option value="2">Học kỳ II (2023-2024)</option>
+            </select>
+          </div>
+          <button class="btn btn-outline">Xem lịch thi</button>
+        </div>
+
+        <div class="exam-list-container" data-aos="fade-up">
+          <div class="table-responsive">
+            <table class="exam-table">
+              <thead>
+                <tr>
+                  <th>STT</th>
+                  <th>Mã môn</th>
+                  <th>Tên môn</th>
+                  <th>Hình thức thi</th>
+                  <th>Ngày thi</th>
+                  <th>Giờ thi</th>
+                  <th>Phòng thi</th>
+                  <th>Ghi chú</th>
+                </tr>
+              </thead>
+              <tbody id="exam-tbody">
+                <tr>
+                  <td>1</td>
+                  <td>QP101</td>
+                  <td>
+                    <div class="course-name">
+                      <i class="fas fa-shield-alt"></i>
+                      Quốc phòng
+                    </div>
+                  </td>
+                  <td>Trắc nghiệm</td>
+                  <td>15/06/2023</td>
+                  <td>07:30 - 09:30</td>
+                  <td>P.401</td>
+                  <td>
+                    <button class="info-btn" data-id="QP101">
+                      <i class="fas fa-info-circle"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>NET101</td>
+                  <td>
+                    <div class="course-name">
+                      <i class="fas fa-laptop-code"></i>
+                      Lập trình .NET C#
+                    </div>
+                  </td>
+                  <td>Trắc nghiệm</td>
+                  <td>17/06/2023</td>
+                  <td>09:45 - 11:45</td>
+                  <td>P.305</td>
+                  <td>
+                    <button class="info-btn" data-id="NET101">
+                      <i class="fas fa-info-circle"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>IOT201</td>
+                  <td>
+                    <div class="course-name">
+                      <i class="fas fa-microchip"></i>
+                      Công nghệ IoT
+                    </div>
+                  </td>
+                  <td>Tiểu luận</td>
+                  <td>20/06/2023</td>
+                  <td>13:30 - 15:30</td>
+                  <td>P.203</td>
+                  <td>
+                    <button class="info-btn" data-id="IOT201">
+                      <i class="fas fa-info-circle"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>HCI101</td>
+                  <td>
+                    <div class="course-name">
+                      <i class="fas fa-users-cog"></i>
+                      Tương tác người và máy
+                    </div>
+                  </td>
+                  <td>Trắc nghiệm</td>
+                  <td>22/06/2023</td>
+                  <td>07:30 - 09:30</td>
+                  <td>P.405</td>
+                  <td>
+                    <button class="info-btn" data-id="HCI101">
+                      <i class="fas fa-info-circle"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>WEB102</td>
+                  <td>
+                    <div class="course-name">
+                      <i class="fas fa-desktop"></i>
+                      Thiết kế Web
+                    </div>
+                  </td>
+                  <td>Tiểu luận</td>
+                  <td>24/06/2023</td>
+                  <td>13:30 - 15:30</td>
+                  <td>P.302</td>
+                  <td>
+                    <button class="info-btn" data-id="WEB102">
+                      <i class="fas fa-info-circle"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>AVCB101</td>
+                  <td>
+                    <div class="course-name">
+                      <i class="fas fa-language"></i>
+                      AVCB
+                    </div>
+                  </td>
+                  <td>Trắc nghiệm</td>
+                  <td>27/06/2023</td>
+                  <td>09:45 - 11:45</td>
+                  <td>P.501</td>
+                  <td>
+                    <button class="info-btn" data-id="AVCB101">
+                      <i class="fas fa-info-circle"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="exam-summary" data-aos="fade-up">
+          <div class="summary-card">
+            <h3>Tổng hợp</h3>
+            <div class="summary-details">
+              <div class="summary-row">
+                <span>Tổng số môn thi:</span>
+                <span id="total-exams">6</span>
+              </div>
+              <div class="summary-row">
+                <span>Trắc nghiệm:</span>
+                <span id="mcq-exams">4</span>
+              </div>
+              <div class="summary-row">
+                <span>Tiểu luận:</span>
+                <span id="essay-exams">2</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-row">
+                <span>Thời gian bắt đầu:</span>
+                <span id="start-date">15/06/2023</span>
+              </div>
+              <div class="summary-row">
+                <span>Thời gian kết thúc:</span>
+                <span id="end-date">27/06/2023</span>
+              </div>
+            </div>
+            <button id="print-schedule" class="btn btn-primary btn-block">
+              <i class="fas fa-print"></i> In lịch thi
+            </button>
+            <button id="download-schedule" class="btn btn-outline btn-block">
+              <i class="fas fa-download"></i> Tải lịch thi
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="exam-rules-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Quy định thi</h2>
+          <p>Các quy định sinh viên cần tuân thủ trong kỳ thi</p>
+        </div>
+
+        <div class="rules-content" data-aos="fade-up">
+          <ul class="rules-list">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Sinh viên phải có mặt tại phòng thi trước giờ thi ít nhất 15
+                phút</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Mang theo thẻ sinh viên và giấy tờ tùy thân có ảnh</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Không sử dụng tài liệu, thiết bị điện tử trừ khi được cho
+                phép</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Với hình thức thi tiểu luận, sinh viên cần nộp bản in và file
+                mềm</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Với hình thức trắc nghiệm, sinh viên được phát phiếu trả lời và
+                bút chì 2B</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Sinh viên vắng thi không có lý do sẽ nhận điểm 0 cho môn thi
+                đó</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="modal" id="exam-details-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="exam-details">
+          <div class="exam-details-header">
+            <i class="fas fa-clipboard-list"></i>
+            <h3>Chi tiết môn thi</h3>
+          </div>
+          <div class="exam-details-body">
+            <div class="details-section">
+              <h4>Thông tin chung</h4>
+              <div class="detail-row">
+                <span>Mã môn:</span>
+                <span id="detail-code">QP101</span>
+              </div>
+              <div class="detail-row">
+                <span>Tên môn:</span>
+                <span id="detail-name">Quốc phòng</span>
+              </div>
+              <div class="detail-row">
+                <span>Giảng viên:</span>
+                <span id="detail-teacher">Nguyễn Văn A</span>
+              </div>
+            </div>
+
+            <div class="details-section">
+              <h4>Thông tin thi</h4>
+              <div class="detail-row">
+                <span>Hình thức thi:</span>
+                <span id="detail-format">Trắc nghiệm</span>
+              </div>
+              <div class="detail-row">
+                <span>Thời gian thi:</span>
+                <span id="detail-duration">120 phút</span>
+              </div>
+              <div class="detail-row">
+                <span>Tài liệu:</span>
+                <span id="detail-materials">Không được sử dụng tài liệu</span>
+              </div>
+            </div>
+
+            <div class="details-section">
+              <h4>Nội dung ôn tập</h4>
+              <div id="detail-topics" class="detail-topics">
+                <p>Chi tiết nội dung ôn tập sẽ được hiển thị ở đây.</p>
+              </div>
+            </div>
+
+            <div class="details-section">
+              <h4>Lưu ý</h4>
+              <div id="detail-notes" class="detail-notes">
+                <p>Các lưu ý đặc biệt sẽ được hiển thị ở đây.</p>
+              </div>
+            </div>
+          </div>
+          <div class="exam-details-footer">
+            <button id="close-details" class="btn btn-primary">Đóng</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="contact-cta">
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <h2>Bạn có thắc mắc về lịch thi?</h2>
+          <p>Liên hệ với phòng đào tạo để được giải đáp mọi thắc mắc</p>
+          <div class="cta-buttons">
+            <a href="tel:0123456789" class="btn btn-outline">
+              <i class="fas fa-phone-alt"></i> Gọi ngay
+            </a>
+            <a href="contact.html" class="btn btn-primary">
+              <i class="fas fa-envelope"></i> Gửi tin nhắn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <div class="footer-logo">
+              <img src="/hinh5.png" alt="Logo Trường Học" />
+              <h3>Trường Học XYZ</h3>
+            </div>
+            <p>
+              Chất lượng - Sáng tạo - Phát triển. Môi trường học tập lý tưởng
+              cho thế hệ tương lai.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Liên kết</h3>
+            <ul class="footer-links">
+              <li><a href="/main.html">Trang chủ</a></li>
+              <li><a href="/tkb.html">Thời khóa biểu</a></li>
+              <li><a href="/thongbao.html">Thông báo</a></li>
+              <li><a href="/sport.html">Hoạt động thể thao</a></li>
+              <li><a href="contact.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Thông tin liên hệ</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                TP. Hồ Chí Minh
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:0123456789">0123 456 789</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@truonghocxyz.edu.vn"
+                  >info@truonghocxyz.edu.vn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Giờ làm việc</h3>
+            <ul class="working-hours">
+              <li><span>Thứ Hai - Thứ Sáu:</span> 7:00 - 17:00</li>
+              <li><span>Thứ Bảy:</span> 7:00 - 12:00</li>
+              <li><span>Chủ Nhật:</span> Đóng cửa</li>
+            </ul>
+            <div class="newsletter">
+              <h4>Đăng ký nhận tin</h4>
+              <form>
+                <input type="email" placeholder="Email của bạn" required />
+                <button type="submit">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 Trường Học XYZ. Tất cả quyền được bảo lưu.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/lichthi.js"></script>
+  </body>
+</html>

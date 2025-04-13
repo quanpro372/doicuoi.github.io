@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thời Khóa Biểu - Trường Học XYZ</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/tkb.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="logo">
+            <img src="../images/school-logo.svg" alt="Logo Trường Học" />
+            <div class="school-name">
+              <h1>Trường Học XYZ</h1>
+              <p>Chất lượng - Sáng tạo - Phát triển</p>
+            </div>
+          </div>
+          <div class="header-contact">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <span>Liên hệ</span>
+                <a href="tel:0123456789">0123 456 789</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span>Email</span>
+                <a href="mailto:info@truonghocxyz.edu.vn"
+                  >info@truonghocxyz.edu.vn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+          <ul class="menu">
+            <li><a href="./main.html">Trang chủ</a></li>
+            <li class="dropdown">
+              <a href="information.html"
+                >Thông tin <i class="fas fa-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li class="active">
+                  <a href="schedule.html">Thời khóa biểu</a>
+                </li>
+                <li><a href="/xemdien.html">Xem điểm</a></li>
+                <li><a href="/lichthi.html">Lịch thi</a></li>
+                <li><a href="/hocphi.html">Học phí</a></li>
+                <li><a href="pay-tuition.html">Đóng học phí</a></li>
+              </ul>
+            </li>
+            <li><a href="/sport.html">Hoạt động thể thao</a></li>
+            <li><a href="/thongbao.html">Thông báo</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Title -->
+    <section class="page-title">
+      <div class="container">
+        <h1>Thời Khóa Biểu</h1>
+        <div class="breadcrumb">
+          <a href="/main.html">Trang chủ</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <a href="/main.html">Thông tin</a>
+          <span class="separator"><i class="fas fa-angle-right"></i></span>
+          <span class="current">Thời khóa biểu</span>
+        </div>
+      </div>
+    </section>
+    <section class="schedule-intro">
+      <div class="container">
+        <div class="intro-content">
+          <div class="intro-text" data-aos="fade-right">
+            <h2>Lịch Học Hàng Tuần</h2>
+            <p>
+              Thời khóa biểu được thiết kế khoa học, cân bằng giữa các môn học
+              để đảm bảo học sinh phát triển toàn diện cả về kiến thức lẫn thể
+              chất.
+            </p>
+            <p>
+              Hệ thống tự động cập nhật các thay đổi về lịch học, phòng học và
+              giáo viên phụ trách. Phụ huynh và học sinh có thể theo dõi dễ
+              dàng.
+            </p>
+            <a href="#weekly-schedule" class="btn btn-primary"
+              >Xem thời khóa biểu</a
+            >
+          </div>
+          <div class="intro-image" data-aos="fade-left">
+            <img src="../images/schedule-intro.jpg" alt="Thời khóa biểu" />
+            <div class="overlay-text">
+              <div class="overlay-content">
+                <h3>"Học tập có kế hoạch - Thành công vững bền"</h3>
+                <p>Quản lý thời gian hiệu quả - Nắm bắt kiến thức toàn diện</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weekly Schedule -->
+    <section id="weekly-schedule" class="weekly-schedule">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Thời Khóa Biểu Hàng Tuần</h2>
+          <p>
+            Lịch học chi tiết từ thứ 2 đến thứ 7, cập nhật mới nhất từ nhà
+            trường
+          </p>
+        </div>
+
+        <div class="schedule-filter" data-aos="fade-up">
+          <div class="filter-group">
+            <label for="class-select">Lớp:</label>
+            <select id="class-select" class="form-select">
+              <option value="svnam1">26TH01</option>
+              <option value="svnam2">26TH02</option>
+              <option value="svnam3">26TH03</option>
+              <option value="svnam4">26TH04</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="week-select">Tuần:</label>
+            <select id="week-select" class="form-select">
+              <option value="current">Tuần hiện tại</option>
+            </select>
+          </div>
+          <button class="btn btn-outline">Xem lịch</button>
+        </div>
+
+        <div class="schedule-container" data-aos="fade-up">
+          <div class="schedule-tabs">
+            <div class="tab active" data-day="monday">Thứ 2</div>
+            <div class="tab" data-day="tuesday">Thứ 3</div>
+            <div class="tab" data-day="wednesday">Thứ 4</div>
+            <div class="tab" data-day="thursday">Thứ 5</div>
+            <div class="tab" data-day="friday">Thứ 6</div>
+            <div class="tab" data-day="saturday">Thứ 7</div>
+          </div>
+
+          <div class="schedule-content">
+            <!-- Thứ 2 -->
+            <div class="day-schedule active" id="monday-schedule">
+              <div class="time-slots">
+                <div class="time-slot">7:30 - 8:15</div>
+                <div class="time-slot">8:15 - 9:00</div>
+                <div class="time-slot">9:00 - 9:45</div>
+                <div class="time-slot break">9:45 - 10:00</div>
+                <div class="time-slot">10:00 - 10:45</div>
+                <div class="time-slot">10:45 - 11:30</div>
+                <div class="time-slot">11:30 - 12:15</div>
+              </div>
+
+              <div class="schedule-cards">
+                <div class="schedule-card" data-aos="flip-left">
+                  <div class="subject-badge">
+                    <i class="fas fa-atom"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3>Vật Lý</h3>
+                    <p>Phòng 201 - GV: Nguyễn Văn A</p>
+                    <div class="schedule-details">
+                      <div class="detail">
+                        <i class="fas fa-clock"></i>
+                        <span>7:30 - 8:15</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="schedule-card"
+                  data-aos="flip-left"
+                  data-aos-delay="100"
+                >
+                  <div class="subject-badge">
+                    <i class="fas fa-flask"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3>Hóa Học</h3>
+                    <p>Phòng Lab 3 - GV: Trần Thị B</p>
+                    <div class="schedule-details">
+                      <div class="detail">
+                        <i class="fas fa-clock"></i>
+                        <span>8:15 - 9:00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="schedule-card"
+                  data-aos="flip-left"
+                  data-aos-delay="200"
+                >
+                  <div class="subject-badge">
+                    <i class="fas fa-square-root-alt"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3>Toán</h3>
+                    <p>Phòng 102 - GV: Lê Văn C</p>
+                    <div class="schedule-details">
+                      <div class="detail">
+                        <i class="fas fa-clock"></i>
+                        <span>9:00 - 9:45</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="schedule-card break-card">
+                  <div class="card-content">
+                    <h3>Giải lao</h3>
+                    <p>Nghỉ ngơi, ăn nhẹ</p>
+                  </div>
+                </div>
+
+                <div
+                  class="schedule-card"
+                  data-aos="flip-left"
+                  data-aos-delay="300"
+                >
+                  <div class="subject-badge">
+                    <i class="fas fa-language"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3>Tiếng Anh</h3>
+                    <p>Phòng 305 - GV: Phạm Thị D</p>
+                    <div class="schedule-details">
+                      <div class="detail">
+                        <i class="fas fa-clock"></i>
+                        <span>10:00 - 10:45</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="schedule-card"
+                  data-aos="flip-left"
+                  data-aos-delay="400"
+                >
+                  <div class="subject-badge">
+                    <i class="fas fa-book"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3>Ngữ Văn</h3>
+                    <p>Phòng 203 - GV: Hoàng Văn E</p>
+                    <div class="schedule-details">
+                      <div class="detail">
+                        <i class="fas fa-clock"></i>
+                        <span>10:45 - 11:30</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="schedule-card"
+                  data-aos="flip-left"
+                  data-aos-delay="500"
+                >
+                  <div class="subject-badge">
+                    <i class="fas fa-dumbbell"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3>Thể Dục</h3>
+                    <p>Sân trường - GV: Vũ Thị F</p>
+                    <div class="schedule-details">
+                      <div class="detail">
+                        <i class="fas fa-clock"></i>
+                        <span>11:30 - 12:15</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="exam-schedule">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Lịch Kiểm Tra Sắp Tới</h2>
+          <p>Các bài kiểm tra quan trọng trong tháng này</p>
+        </div>
+
+        <div class="exam-timeline" data-aos="fade-up">
+          <div class="timeline-item">
+            <div class="timeline-dot exam-dot"></div>
+            <div class="timeline-date">
+              <span class="day">15</span>
+              <span class="month">Tháng 5</span>
+            </div>
+            <div class="timeline-content exam-content">
+              <h3>Kiểm Tra Toán Giữa Kỳ</h3>
+              <p>Kiểm tra 1 tiết môn Toán, chương 1-3</p>
+              <div class="event-details">
+                <div class="detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Phòng 201, 202, 203</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-clock"></i>
+                  <span>7:30 - 8:15</span>
+                </div>
+              </div>
+              <div class="exam-subjects">
+                <span class="subject-tag math">Toán</span>
+                <span class="subject-tag physics">Vật Lý</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot exam-dot"></div>
+            <div class="timeline-date">
+              <span class="day">18</span>
+              <span class="month">Tháng 5</span>
+            </div>
+            <div class="timeline-content exam-content">
+              <h3>Kiểm Tra Tiếng Anh</h3>
+              <p>Kiểm tra kỹ năng nghe và đọc hiểu</p>
+              <div class="event-details">
+                <div class="detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Phòng Lab 1, 2</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-clock"></i>
+                  <span>9:00 - 9:45</span>
+                </div>
+              </div>
+              <div class="exam-subjects">
+                <span class="subject-tag english">Tiếng Anh</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot exam-dot"></div>
+            <div class="timeline-date">
+              <span class="day">22</span>
+              <span class="month">Tháng 5</span>
+            </div>
+            <div class="timeline-content exam-content">
+              <h3>Kiểm Tra Hóa Học</h3>
+              <p>Bài kiểm tra thực hành tại phòng lab</p>
+              <div class="event-details">
+                <div class="detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Phòng Lab Hóa</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-clock"></i>
+                  <span>10:00 - 10:45</span>
+                </div>
+              </div>
+              <div class="exam-subjects">
+                <span class="subject-tag chemistry">Hóa Học</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot exam-dot"></div>
+            <div class="timeline-date">
+              <span class="day">25</span>
+              <span class="month">Tháng 5</span>
+            </div>
+            <div class="timeline-content exam-content">
+              <h3>Kiểm Tra Định Kỳ</h3>
+              <p>Kiểm tra đồng loạt các môn: Văn, Sử, Địa</p>
+              <div class="event-details">
+                <div class="detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Phòng 301-305</span>
+                </div>
+                <div class="detail">
+                  <i class="fas fa-clock"></i>
+                  <span>7:30 - 9:00</span>
+                </div>
+              </div>
+              <div class="exam-subjects">
+                <span class="subject-tag literature">Ngữ Văn</span>
+                <span class="subject-tag history">Lịch Sử</span>
+                <span class="subject-tag geography">Địa Lý</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="teachers-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Giáo Viên Bộ Môn</h2>
+          <p>Đội ngũ giáo viên giàu kinh nghiệm, tận tâm với học sinh</p>
+        </div>
+
+        <div class="teachers-grid">
+          <div class="teacher-card" data-aos="fade-up">
+            <div class="teacher-image">
+              <img src="" alt="Giáo viên" />
+              <div class="teacher-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+              </div>
+            </div>
+            <div class="teacher-info">
+              <h3>Lê Văn C</h3>
+              <span class="teacher-title">Giáo viên Toán</span>
+              <p>
+                15 năm kinh nghiệm giảng dạy, chuyên luyện thi đại học môn Toán
+              </p>
+              <div class="teacher-subjects">
+                <span>Toán Đại</span>
+                <span>Toán Hình</span>
+                <span>Giải Tích</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="teacher-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="teacher-image">
+              <img src="../images/teacher2.jpg" alt="Giáo viên " />
+              <div class="teacher-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+              </div>
+            </div>
+            <div class="teacher-info">
+              <h3>Nguyễn Văn A</h3>
+              <span class="teacher-title">Giáo viên Vật Lý</span>
+              <p>
+                Thạc sĩ Vật Lý, từng đạt giải Nhà giáo trẻ tiêu biểu thành phố
+              </p>
+              <div class="teacher-subjects">
+                <span>Cơ học</span>
+                <span>Điện học</span>
+                <span>Quang học</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="teacher-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="teacher-image">
+              <img src="../images/teacher3.jpg" alt="Giáo viên Tiếng Anh" />
+              <div class="teacher-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+              </div>
+            </div>
+            <div class="teacher-info">
+              <h3>Phạm Thị D</h3>
+              <span class="teacher-title">Giáo viên Tiếng Anh</span>
+              <p>Tốt nghiệp Đại học Ngoại ngữ, có chứng chỉ TESOL quốc tế</p>
+              <div class="teacher-subjects">
+                <span>Ngữ pháp</span>
+                <span>Giao tiếp</span>
+                <span>Luyện thi</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="teacher-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="teacher-image">
+              <img src="../images/teacher4.jpg" alt="Giáo viên" />
+              <div class="teacher-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-phone-alt"></i></a>
+              </div>
+            </div>
+            <div class="teacher-info">
+              <h3>Trần Thị B</h3>
+              <span class="teacher-title">Giáo viên Hóa Học</span>
+              <p>
+                10 năm kinh nghiệm, chuyên luyện thi học sinh giỏi cấp thành phố
+              </p>
+              <div class="teacher-subjects">
+                <span>Hóa vô cơ</span>
+                <span>Hóa hữu cơ</span>
+                <span>Hóa phân tích</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="download-schedule-cta">
+      <div class="container">
+        <div class="cta-content" data-aos="zoom-in">
+          <h2>Tải Xuống Thời Khóa Biểu</h2>
+          <p>
+            Tải về thời khóa biểu đầy đủ để tiện theo dõi và in ấn khi cần thiết
+          </p>
+          <div class="download-buttons">
+            <a href="#" class="btn btn-light">
+              <i class="fas fa-file-pdf"></i> PDF
+            </a>
+            <a href="#" class="btn btn-light">
+              <i class="fas fa-file-excel"></i> Excel
+            </a>
+            <a href="#" class="btn btn-light">
+              <i class="fas fa-file-image"></i> Hình ảnh
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <div class="footer-logo">
+                <img src="/hinh5.jpg" alt="Logo Trường Học" />
+                <h3>Trường Học XYZ</h3>
+              </div>
+              <p>
+                Nơi ươm mầm tài năng, phát triển toàn diện giá trị con người.
+                Chúng tôi cam kết cung cấp môi trường học tập hiện đại, sáng tạo
+                và thân thiện.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h4>Liên kết nhanh</h4>
+              <ul>
+                <li><a href="/main.html">Trang chủ</a></li>
+                <li><a href="/main.html">Thông tin</a></li>
+                <li><a href="/sport.html">Hoạt động thể thao</a></li>
+                <li><a href="/thongbao.html">Thông báo</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Thông tin học sinh</h4>
+              <ul>
+                <li><a href="/tkb.html">Thời khóa biểu</a></li>
+                <li><a href="/xemdien.html">Xem điểm</a></li>
+                <li><a href="/lichthi.html">Lịch thi</a></li>
+                <li><a href="/hocphi.html">Học phí</a></li>
+                <li><a href="pay-tuition.html">Đóng học phí</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Thông tin liên hệ</h4>
+              <div class="contact-info">
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 123 Đường ABC, Quận XYZ,
+                  Thành phố HCM
+                </p>
+                <p><i class="fas fa-phone"></i> 0123 456 789</p>
+                <p><i class="fas fa-envelope"></i> info@truonghocxyz.edu.vn</p>
+                <p>
+                  <i class="fas fa-clock"></i> Thứ Hai - Thứ Sáu: 7:00 - 17:00
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 Trường Học XYZ. Tất cả quyền được bảo lưu.</p>
+          <div class="footer-links">
+            <a href="#">Điều khoản sử dụng</a>
+            <a href="#">Chính sách bảo mật</a>
+            <a href="about.html" class="author-link">Giới thiệu</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="/js/tkb.js"></script>
+  </body>
+</html>
